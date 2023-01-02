@@ -1,6 +1,7 @@
 const dvRow = document.querySelector("#divRow");
 const url = "https://pokeapi.co/api/v2/pokemon";
 const frm = document.querySelector("form");
+const loaded = true;
 const pokemonList = [];
 
 (async () => {
@@ -8,6 +9,7 @@ const pokemonList = [];
     const response = await fetch(`${url}/${i}`);
     let data = await response.json();
     pokemonList.push(data);
+    document.querySelector("#loading-message").style.display = "none";
   }
   showPokemons(pokemonList);
 })();
