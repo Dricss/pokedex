@@ -1,0 +1,23 @@
+body {
+  background-color: red;
+}
+li {
+  border-color: black !important;
+}
+.container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.container-fluid {
+  background-color: red;
+}
+
+@media (max-width: 768px) {
+  .col-4 {
+    width: 100% !important;
+  }
+  .row {
+    --bs-gutter-x: 0rem !important;
+  }
+}
