@@ -12,8 +12,13 @@ li {
 .container-fluid {
   background-color: red;
 }
+
 .card {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.spa-card {
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {

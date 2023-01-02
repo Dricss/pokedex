@@ -49,22 +49,21 @@ function pokemonCard(pokemon) {
   <img src="${pokemon.sprites.front_default}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${pokemon.name.toUpperCase()}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item" style="background-color: ${selectTypeColorAbilities(
       pokemon.types[0].type.name
-    )}">${pokemon.abilities[0].ability.name}</li>
+    )}">Abilitie: ${pokemon.abilities[0].ability.name}</li>
     ${
       pokemon.abilities[1]
         ? `<li class="list-group-item" style="background-color: ${selectTypeColorAbilities(
             pokemon.types[0].type.name
-          )}">${pokemon.abilities[1].ability.name}</li>`
+          )}"> Abilitie: ${pokemon.abilities[1].ability.name}</li>`
         : ""
     }
     <li class="list-group-item" style="background-color: ${selectTypeColorAbilities(
       pokemon.types[0].type.name
-    )}">${pokemon.types[0].type.name}</li>
+    )}">Type: <span class="spa-card">${pokemon.types[0].type.name}</span></li>
   </ul>
 </div>
   `;
